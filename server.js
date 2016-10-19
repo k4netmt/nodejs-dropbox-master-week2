@@ -7,10 +7,10 @@ const fs = require('fs').promise
 const Hapi = require('hapi')
 const asyncHandlerPlugin = require('hapi-async-handler')
 
-// const cat = require('./cat')
-// const rm = require('./rm')
-// const mkdir = require('./mkdir')
-// const touch = require('./touch')
+ const cat = require('./cat')
+ const rm = require('./rm')
+ const mkdir = require('./mkdir')
+ const touch = require('./touch')
 
 function getLocalFilePathFromRequest(request) {
   return path.join(__dirname, 'files', request.params.file)
